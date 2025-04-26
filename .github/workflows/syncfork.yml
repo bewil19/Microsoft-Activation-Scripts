@@ -26,7 +26,7 @@ jobs:
     - name: Push changes if any
       run: |
         if [ "$(git status --porcelain)" != "" ]; then
-          git push origin main
+          git push origin master
         else
           echo "No changes to push."
         fi
